@@ -5,33 +5,106 @@
   <title>چاپ رضا</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-    body {
+    * {
+      box-sizing: border-box;
       font-family: sans-serif;
-      text-align: center;
-      background: #f5f5f5;
-      padding: 40px;
     }
-    h1 { color: #222; }
-    a {
-      display: block;
-      margin: 12px auto;
-      padding: 12px;
-      max-width: 280px;
-      text-decoration: none;
-      background: #000;
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: radial-gradient(circle at top, #1a1a1a, #000);
+      display: flex;
+      justify-content: center;
+      align-items: center;
       color: #fff;
-      border-radius: 8px;
+    }
+    .container {
+      width: 100%;
+      max-width: 360px;
+      text-align: center;
+      padding: 24px;
+    }
+    .logo {
+      width: 120px;
+      height: 120px;
+      margin: 0 auto 16px;
+      border-radius: 50%;
+      overflow: hidden;
+      box-shadow: 0 0 25px rgba(212,175,55,0.35);
+    }
+
+    .logo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    h1 {
+      font-size: 22px;
+      margin: 12px 0 6px;
+      letter-spacing: 1px;
+    }
+    .subtitle {
+      font-size: 14px;
+      opacity: 0.7;
+      margin-bottom: 24px;
+    }
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      text-decoration: none;
+      color: #fff;
+      background: linear-gradient(145deg, #1c1c1c, #0d0d0d);
+      padding: 14px;
+      border-radius: 14px;
+      margin-bottom: 14px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+      transition: all 0.25s ease;
+    }
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.9);
+    }
+    .btn img {
+      width: 22px;
+      height: 22px;
+    }
+    .footer {
+      margin-top: 28px;
+      font-size: 12px;
+      opacity: 0.4;
     }
   </style>
 </head>
 <body>
-
-  <h1>چاپ رضا</h1>
-
-  
-  <a href="https://t.me/USERNAME">تلگرام</a>
-  <a href="tel:09XXXXXXXXX">تماس</a>
-  <a href="https://maps.google.com/?q=YOUR_LOCATION">آدرس</a>
-
+  <div class="container">
+    <!-- لوگو -->
+    <div class="logo">
+      <img src="logo.png" alt="Shakiba Watch">
+    </div>
+    <h1>چاپ رضا</h1>
+    <div class="subtitle">باز کردن با:</div>
+    <!-- دکمه‌ها -->
+    <a class="btn" href="https://maps.google.com/?q=YOUR_LOCATION">
+      <img src="https://img.icons8.com/color/48/marker.png">
+      نشان
+    </a>
+    <a class="btn" href="https://instagram.com/USERNAME">
+      <img src="https://img.icons8.com/color/48/instagram-new.png">
+      اینستاگرام
+    </a>
+    <a class="btn" href="https://t.me/USERNAME">
+      <img src="https://img.icons8.com/color/48/telegram-app.png">
+      تلگرام
+    </a>
+    <a class="btn" href="https://eitaa.com/USERNAME">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Eitaa_logo.svg/512px-Eitaa_logo.svg.png">
+      ایتا
+    </a>
+    <div class="footer">
+      © chap reza
+    </div>
+  </div>
 </body>
 </html>
