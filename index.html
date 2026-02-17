@@ -9,6 +9,7 @@
       box-sizing: border-box;
       font-family: sans-serif;
     }
+
     body {
       margin: 0;
       min-height: 100vh;
@@ -18,12 +19,14 @@
       align-items: center;
       color: #fff;
     }
+
     .container {
       width: 100%;
       max-width: 360px;
       text-align: center;
       padding: 24px;
     }
+
     .logo {
       width: 120px;
       height: 120px;
@@ -38,16 +41,13 @@
       height: 100%;
       object-fit: cover;
     }
+
     h1 {
       font-size: 22px;
-      margin: 12px 0 6px;
+      margin: 12px 0 24px;
       letter-spacing: 1px;
     }
-    .subtitle {
-      font-size: 14px;
-      opacity: 0.7;
-      margin-bottom: 24px;
-    }
+
     .btn {
       display: flex;
       align-items: center;
@@ -61,15 +61,19 @@
       margin-bottom: 14px;
       box-shadow: 0 8px 20px rgba(0,0,0,0.6);
       transition: all 0.25s ease;
+      font-size: 15px;
     }
+
     .btn:hover {
       transform: translateY(-2px);
       box-shadow: 0 12px 30px rgba(0,0,0,0.9);
     }
+
     .btn img {
       width: 22px;
       height: 22px;
     }
+
     .footer {
       margin-top: 28px;
       font-size: 12px;
@@ -78,32 +82,44 @@
   </style>
 </head>
 <body>
+
   <div class="container">
-    <!-- لوگو -->
+
     <div class="logo">
       <img src="logo.png" alt="chap">
     </div>
+
     <h1>چاپ رضا</h1>
-    <!-- دکمه‌ها -->
-    <a class="btn" href="https://maps.google.com/?q=YOUR_LOCATION">
-      <img src="https://img.icons8.com/color/48/marker.png">
-      نشان
+
+    <!-- روبیکا -->
+    <a class="btn" href="https://rubika.ir/Hadibakhoda">
+      <img src="roobik.png">
+      روبیکا
     </a>
-    <a class="btn" href="https://instagram.com/USERNAME">
-      <img src="https://img.icons8.com/color/48/instagram-new.png">
-      اینستاگرام
-    </a>
-    <a class="btn" href="https://t.me/USERNAME">
-      <img src="https://img.icons8.com/color/48/telegram-app.png">
-      تلگرام
-    </a>
-    <a class="btn" href="https://eitaa.com/USERNAME">
+
+    <!-- ایتا -->
+    <a class="btn" href="https://eitaa.com/chap1reza">
       <img src="eitaa.png">
       ایتا
     </a>
+
+    <!-- تماس ثابت -->
+    <a class="btn" href="tel:05146123772">
+      <img src="phon.png">
+       تماس با ما
+    </a>
+
+    <!-- نشان (بعداً لینک رو عوض کن) -->
+    <a class="btn" href="#">
+      <img src="neshan.png">
+      📍 نشان
+    </a>
+
     <div class="footer">
       © chap reza
     </div>
+
   </div>
+
 </body>
 </html>
